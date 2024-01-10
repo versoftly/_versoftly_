@@ -1,0 +1,24 @@
+.form p input {
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+p,.form p input {
+    width: 94%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form textarea {
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 300px;
+    max-height: 100%;
+}
