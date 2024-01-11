@@ -1,0 +1,25 @@
+.boton {
+    background-color: var(--fondo2);
+    color: var(--text2);
+    padding: 1rem 3rem;
+    margin: 1rem auto;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: 0 9px var(--sombra1);
+    transition: all ease;
+}
+
+.boton:hover {
+    color: var(--texto);
+    background-color: var(--fondo1);
+}
+
+.boton:active {
+    background-color: var(--fondo1);
+    box-shadow: 0 5px var(--sombra2);
+    transform: translateY(4px);
+}

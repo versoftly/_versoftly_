@@ -1,0 +1,1 @@
+<?php CloseSession::now("url/path/location") ?>

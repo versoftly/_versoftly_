@@ -1,0 +1,13 @@
+.contenedor {
+    width: 100%;
+    min-height: 10rem;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--fondo2);
+    color: var(--text2);
+    text-align: center;
+}
