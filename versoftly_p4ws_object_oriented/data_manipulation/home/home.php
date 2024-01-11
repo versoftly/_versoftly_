@@ -1,10 +1,4 @@
-<?php session_start();
-
-if (!isset($_SESSION['usuario'])) {
-        
-    header ("Location: index.php");
-    
-}
+<?php ActiveSession::ifIsNotActive("url/path/location");
 
 $conexion = Connection::connecto ("?","?","?","?");
 
