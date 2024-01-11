@@ -10,7 +10,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $texto = $_POST['contenido'];
 
     if (empty($titulo) || empty($texto)) {
+
         $errores = "<b>Hay campos vacios</b>";
+
     } else {
         
         $stmt = $conn->prepare("INSERT INTO registro (titulo,contenido,imagen,usuario) VALUES 
@@ -23,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             ":usuario" => $_SESSION['usuario']
         ]);
         
-        header("Location: home.php");
+        header("Location: path/file||url");
     }
 
 }
