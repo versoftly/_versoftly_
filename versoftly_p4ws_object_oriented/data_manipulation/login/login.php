@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $user = htmlspecialchars(strtolower($_POST['usuario']));
     $pass = hash('sha512',$_POST['password']);
     
-    $conn = Connection::connecto ("?","?","?","?");
+    $conn = Connection::connecto ("serverName/url","databaseName","userName","password");
     
     $statement = $conn->prepare("SELECT * FROM registro WHERE userName = :user AND userPassword = :password");
     

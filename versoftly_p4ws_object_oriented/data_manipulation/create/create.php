@@ -2,7 +2,7 @@
 
 $errores = '';
     
-$conn = Connection::connecto ("?","?","?","?");
+$conn = Connection::connecto ("serverName/url","databaseName","userName","password");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     

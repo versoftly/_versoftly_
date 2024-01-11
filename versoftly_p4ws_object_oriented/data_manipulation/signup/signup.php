@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     } else {
 
-        $conn = Connection::connecto ("?","?","?","?");
+        $conn = Connection::connecto ("serverName/url","databaseName","userName","password");
         
         $statement = $conn->prepare("SELECT * FROM registro WHERE userName = :user LIMIT 1");
         $statement->execute([':user'=>$user]);

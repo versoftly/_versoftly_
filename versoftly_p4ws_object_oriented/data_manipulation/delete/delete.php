@@ -1,6 +1,6 @@
 <?php ActiveSession::ifIsNotActive("url/path/location");
 
-$conn = Connection::connecto ("?","?","?","?");
+$conn = Connection::connecto ("serverName/url","databaseName","userName","password");
 
 $id = htmlspecialchars($_GET['id']);
 

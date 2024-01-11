@@ -1,6 +1,6 @@
 <?php ActiveSession::ifIsNotActive("url/path/location");
 
-$conexion = Connection::connecto ("?","?","?","?");
+$conexion = Connection::connecto ("serverName/url","databaseName","userName","password");
 
 $sentencia = $conexion->prepare("SELECT * FROM registro WHERE usuario = :usuario");
 $sentencia->execute([
