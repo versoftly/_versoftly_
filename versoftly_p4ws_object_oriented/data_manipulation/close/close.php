@@ -1,9 +1,1 @@
-<?php session_start();
-
-session_destroy();
-
-$_SESSION = [];
-
-header ("Location: ?");
-
-?>
+<?php CloseSession::now("url/path/location") ?>
