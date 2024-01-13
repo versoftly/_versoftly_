@@ -7,12 +7,14 @@
         <link rel="stylesheet" href="css/Normalize.css">
         <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap"
          rel="stylesheet">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/contenedor.css">
         <title>versoftly</title>
     </head>
     <body>
 
         <?php
-        
+            require_once("footer/footer.html");
         ?>
 
     </body>
