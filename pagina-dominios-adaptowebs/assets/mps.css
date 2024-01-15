@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header, nav, section, footer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+header p {
+    font-size: 16px;
+    color: #666;
+}
+
+.navigation-menu {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navigation-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navigation-menu a:hover {
+    color: #ffc107;
+}
+
+.feature-section {
+    /* Agrega estilos para el contenido del landing page */
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-top: 50px;
+}
