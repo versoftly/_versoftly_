@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f4d3c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefits,
+.how-it-works,
+.testimonials,
+.contact-form {
+    margin-bottom: 30px;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+blockquote {
+    border-left: 5px solid #1f4d3c;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #1f4d3c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.cta-button {
+    background-color: #b64b4bde;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #4b08088c;
+}

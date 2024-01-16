@@ -28,6 +28,40 @@
 
             } else if ( $operation === "UPDATE" ) {
 
+                $placeholders = [];
+
+                for ($i=0; $i < count($fieldNames); $i++) { 
+                    $placeholders[$i] = ":".$fieldNames[$i];
+                }
+
+                $data = [];
+
+                for ($i=0; $i < count($values); $i++) { 
+                    array_push($data,[$placeholders[$i] => $values[$i]]);
+                }
+
+                /**
+                 * Debe de haber una secuencia de ingreso 
+                 * de datos para poder definir el id en este
+                 * caso especificamente 
+                 * 
+                 * [
+                 *  "campo identificador"=>":placeholder especifico",
+                 *  "campo random"=>":otherplaceholder random"
+                 * ]
+                 * 
+                 */
+
+                for ($i=0; $i < count($fieldNames); $i++) { 
+                    
+                }
+
+                $sql = "UPDATE $tableName SET titulo=:titulo, contenido=:texto WHERE id=:id";
+                $stmt= $conn->prepare($sql);
+                $stmt->execute($data);
+                
+                header("Location: $redirec");
+
             } else if ( $operation === "INSERT" ) {
 
                 

@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^formulario$ pages/formulario.php [L]
+RewriteRule ^procesar_formulario$ pages/procesar_formulario.php [L]
+RewriteRule ^gracias$ pages/gracias.php [L]

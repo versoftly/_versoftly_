@@ -14,17 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $errores = "<b>Hay campos vacios</b>";
     } else {
         
-        $data = [
-            ':id' => $id,
-            ':titulo' => $titulo,
-            ':texto' => $texto
-        ];
         
-        $sql = "UPDATE registro SET titulo=:titulo, contenido=:texto WHERE id=:id";
-        $stmt= $conn->prepare($sql);
-        $stmt->execute($data);
-        
-        header("Location: home.php");
 
     }
     
